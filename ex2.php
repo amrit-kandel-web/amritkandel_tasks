@@ -19,7 +19,7 @@
         width: auto;
         text-align: center;
         color: beige;
-        
+
     }
 
     .restaurant{
@@ -31,6 +31,7 @@
         grid-gap: 20px;
         padding: 50px;
         grid-template-columns: 33% 33% 33%
+        
     }
 
     .grid-container2{
