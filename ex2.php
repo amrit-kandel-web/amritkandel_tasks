@@ -19,6 +19,7 @@
         width: auto;
         text-align: center;
         color: beige;
+        
     }
 
     .restaurant{
