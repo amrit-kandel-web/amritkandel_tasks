@@ -35,6 +35,9 @@
         </li>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="variable.php">EXERCISE 3</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="aboutus.php">ABOUT US</a>
         </li>
         <li class="nav-item">
