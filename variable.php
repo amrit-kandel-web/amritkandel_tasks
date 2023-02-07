@@ -1,6 +1,7 @@
 <?php include "header.php" ?>
 $title= "Exercise 3";
 
+
 <h1> Exercise 3. In-class Task variable & Operators (variable.php)</h1>
 <h2>
     1 Create a simple html form to get Firstname and Lastname from the user and use echo echo statement to print using
@@ -77,4 +78,22 @@ $sum = $num1 + $num2 + $num3;
 echo "The sum of " . $num1 . ", " . $num2 . " and " . $num3 . " is " . $sum;
 
 ?>
+<h5> 6 Write a PHP script to detect the browser being used to view your pages </h5>
+<?php
+$user_agent = $_SERVER['HTTP_USER_AGENT'];
+
+if (strpos($user_agent, 'Firefox') !== false) {
+    echo "You are using Mozilla Firefox";
+} elseif (strpos($user_agent, 'Chrome') !== false) {
+    echo "You are using Google Chrome";
+} elseif (strpos($user_agent, 'Opera') !== false) {
+    echo "You are using Opera";
+} elseif (strpos($user_agent, 'Safari') !== false) {
+    echo "You are using Safari";
+} else {
+    echo "You are using an unknown browser";
+}
+?>
+
 <?php include "footer.php" ?>
+
