@@ -38,19 +38,48 @@ include "header.php"
 
                 <h3>3. Write a program to grade students based on their total score for a subject. Use variable to hold
                     the total score. The grading scheme is:<h3>
+                        <?php
+                        $total_score = 75; // the student's total score
+                        
+                        if ($total_score > 80) {
+                            echo "Excellent";
+                        } elseif ($total_score > 70) {
+                            echo "Great";
+                        } elseif ($total_score > 60) {
+                            echo "Good";
+                        } elseif ($total_score > 50) {
+                            echo "Pass";
+                        } else {
+                            echo "Fail";
+                        }
+                        
+                        ?>
 
-                        <h4>4.Write a program to get inputs (age and name) from the user and based on their age, decide
-                            if
-                            he/she is eligible for voting. (18 or more than 18 years is eligible for voting,)<h4>
-                                <?php
-                                $name = readline("Enter your name: ");
-                                $age = readline("Enter your age: ");
 
-                                if ($age >= 18) {
-                                    echo "$name, you are eligible for voting.";
-                                } else {
-                                    echo "$name, you are not eligible for voting.";
-                                }
-                                ?>
+                        
+                                    <form action="" method="POST">
+                                    name: <input type="text" name="name" name=required>
+                                    age: <input type="text" name="age" name=required>
+                                    <input type="submit" name="submit" value="submit">
 
-                                <?php include "footer.php" ?>
+                                    <?php
+                                    if (isset($_POST['submit'])) {
+                                        $age = $_POST["age"];
+                                        if ($age >= 18) {
+                                            echo " is eligible for voting.";
+                                        } else {
+                                            echo " is not eligible for voting.";
+                                        }
+
+                                    }
+
+                                    ?>
+                                    <?php
+                                    $user_agent = $_SERVER['HTTP_USER_AGENT']; //last 
+                                    $browser = "Mozilla";
+                                    switch ($user_agent) {
+                                        case (strpos($user_agent, 'Mozilla') == true);
+                                    }
+
+                                    ?>
+                                </form>
