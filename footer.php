@@ -9,7 +9,7 @@
   <!-- Copyright -->
   
 </p>
-<p style="text-align: center;">Copyright © <?php echo date("Y"); ?> - Last Modified: 
+<p style="text-align: center;"><?php echo date("Y"); ?> - Last Modified: 
     <?php 
     echo date("F d, Y H:i:s", filemtime(basename($_SERVER['PHP_SELF']))); 
     ?>
