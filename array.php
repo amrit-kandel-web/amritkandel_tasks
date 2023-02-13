@@ -119,7 +119,5 @@ echo $temp_array[$i].", ";
 ?>
 
 
-
-
 <?php include "footer.php"
 ?>
