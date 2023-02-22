@@ -18,10 +18,20 @@ function hello(){
         let fcolor = document.getElementById('fcolor').value;
         document.body.style.color = fcolor;
     }
-    //on mouse over example
-    function onm(){
-        document.getElementById('mo').style.color = 'blue'; 
-        document.getElementById('mo').style.fontStyle = 'italic';
-        document.getElementById('mo').style.backgroundColor  = 'yellow';
-        document.getElementById('mo').style.fontSize = '2em';
+    
+    
+    //crud
+    function crud(){
+        let fname=(document.form1.fname.value).trim();
+        if (fname.length<5){
+            alert("First Name must have atleast 5 character");
+            return false;
+        }
+        function fnameVal(){
+            let fname=(document.form1.fname.value).trim();
+        if (fname.length<5){
+            alert("First Name must have atleast 5 character");
+            return false;
+        }
+        }
     }
